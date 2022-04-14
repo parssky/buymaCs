@@ -1,6 +1,6 @@
 # front_buyma
 
-A new Flutter application.
+this is a flutter application for buyma project . this is where mobile application works.
 
 ## Getting Started
 
