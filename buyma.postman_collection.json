@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "8c934e62-9e47-428b-8a0a-48c5802737e4",
+		"name": "buyma",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "save post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"a_id\":null,\r\n    \"title\":\"کاردانو\",\r\n    \"coinName\":\"ADA\",\r\n    \"marketcap\":200000,\r\n    \"importance\":\"high\",\r\n    \"proof_add\":null,\r\n    \"pic_proof\":null,\r\n    \"coin_pic\":null,\r\n    \"tex1\":\"کاردانو سقف های جدیدی میزند .\",\r\n    \"text2\":null,\r\n    \"date_event\":null,\r\n    \"id_pic_proof\":null,\r\n    \"id_coin_pic\":null\r\n\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/admin/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"admin",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getall",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/admin/getAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"admin",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"a_id\":1,\r\n    \"title\":\"بیت کوین\",\r\n    \"coinName\":\"BitCoin\",\r\n    \"importance\":\"high\",\r\n    \"proof_add\":null,\r\n    \"pic_proof\":null,\r\n    \"coin_pic\":null\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/admin/update/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"admin",
+						"update",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
